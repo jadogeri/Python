@@ -1,17 +1,23 @@
 import unittest
 
+def sum(a,b):
+    return a + b;
+
 class unitTest(unittest.TestCase):
+
+    def setup(self):
     # Arrange 
-    num1 = 10
-    num2 = 15
-    num3 = 17
-    num4 = 18
-    num5 = 20
-    num6 = 21
-    num7 = 25
+        print("SETUP called ...");
+        self.num1 = 10
+        self.num2 = 15
+        self.num3 = 17
+        self.num4 = 18
+        self.num5 = 20
+        self.num6 = 21
+        self.num7 = 25
 
     # Act
-    
+
 
     # Assert
     def test_test(self):
