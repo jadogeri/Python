@@ -75,4 +75,5 @@ The last section of a high-quality README file is the license. This lets other d
 
 ## Tests
 
-1 
+1 link to 100 projects
+https://github.com/natnew/100-Python-Projects
