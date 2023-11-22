@@ -1,7 +1,7 @@
 import unittest
 
-from constants import *
-from main import validateAge
+from .constants import *
+from .main import validateAge
 
 class ValidateAgeTest(unittest.TestCase):
 
