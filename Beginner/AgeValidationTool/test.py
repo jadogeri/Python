@@ -1,39 +1,45 @@
 import unittest
 
-def sum(a,b):
-    return a + b;
+from constants import *
+from main import validateAge
 
-class unitTest(unittest.TestCase):
+class ValidateAgeTest(unittest.TestCase):
+
+   # Arrange 
+    num1 = 17
+    num2 = 19
+    num3 = 24
 
     def setup(self):
-    # Arrange 
+ 
         print("SETUP called ...");
-        self.num1 = 10
-        self.num2 = 15
-        self.num3 = 17
-        self.num4 = 18
-        self.num5 = 20
-        self.num6 = 21
-        self.num7 = 25
+     
+    def tearDown(self) :
+        print("TEARDOWN called ...");
 
-    # Act
+        self.num1 = 0;
+        self.num2 = 0;
+        self.num3 = 0;
+        
+    def test_minor_age(self):
+        #Act
+        result = validateAge(self.num1)
+        #Assert
+        self.assertEqual(MINOR_AGE_PROMPT,result)
 
-
-    # Assert
-    def test_test(self):
-        pass;
-    def test_test2(self):
-        pass;
-
-class unitTest2(unittest.TestCase):
-    def test_test(self):
-        pass;
-    def test_test2(self):
-        pass;
+    def test_club_age(self):
+        #Act
+        result = validateAge(self.num2)
+        #Assert
+        self.assertEqual(CLUB_AGE_PROMPT,result)
 
 
-    
-    
+    def test_drinking_age(self):
+        #Act
+        print(self.num3)
+        result = validateAge(self.num3)
+        #Assert
+        self.assertEqual(ADULT_AGE_PROMPT,result)
 
 
 if __name__ == "__main__":
