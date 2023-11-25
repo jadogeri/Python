@@ -27,9 +27,12 @@ def validateAge(age):
         return response;
 
 while (run and __name__ == "__main__") :
-    age = int(input("how old are you\n"))
-    validateAge(age);
-    option = input('Do you want to try again!! Y or y for yes and N or n a no\n')
+    try:
+        age = int(input("how old are you\n"))
+        validateAge(age);
+    except ValueError as err :
+        print(err)
+    option = str(input('Do you want to try again!! Y or y for yes and N or n a no\n'))
     if option.upper() != "Y":
         run = False;
  
