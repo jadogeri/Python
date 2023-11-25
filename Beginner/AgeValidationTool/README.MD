@@ -36,9 +36,7 @@ My motivation for this project is to solve problems in python. I built this proj
 
 Note! The version of the python which you have installed will be displayed if the python is successfully installed on your windows.The output produced as shown below.
 
-```md
 ![alt text](assets/images/output3.png)
-```md
 
 ## Usage
 
@@ -52,9 +50,7 @@ Note! The version of the python which you have installed will be displayed if th
 
 5 The terminal produces output as shown below.
 
-```md
 ![alt text](assets/images/output2.png).
-```md
 
 ## Credits
 
@@ -76,6 +72,4 @@ FreeCodeCamp : [Learn Python - Full Course for Beginners [Tutorial]](https://www
 
 5 The terminal produces output as shown below.
 
-```md
 ![alt text](assets/images/output.png)
-```md
