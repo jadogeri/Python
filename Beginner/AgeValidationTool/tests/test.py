@@ -1,18 +1,32 @@
 import unittest
+import sys
 
-from .constants import *
-from .main import validateAge
+from os.path import dirname, abspath
+dir = dirname(dirname(abspath(__file__)))
+
+dir_src = dir +'\src'
+print(dir_src)
+
+dir_tests = dir +'\tests'
+
+
+sys.path.append(dir_src)
+sys.path.append(dir_tests)
+
+from main import validateAge
+from constants import *
+
 
 class ValidateAgeTest(unittest.TestCase):
 
-   # Arrange 
-    num1 = 17
-    num2 = 19
-    num3 = 24
-
-    def setup(self):
+   
+    def setUp(self):
  
         print("SETUP called ...");
+        # Arrange 
+        self.num1 = 17
+        self.num2 = 19
+        self.num3 = 24
      
     def tearDown(self) :
         print("TEARDOWN called ...");
@@ -20,7 +34,7 @@ class ValidateAgeTest(unittest.TestCase):
         self.num1 = 0;
         self.num2 = 0;
         self.num3 = 0;
-        
+       
     def test_minor_age(self):
         #Act
         result = validateAge(self.num1)
