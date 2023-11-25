@@ -9,7 +9,7 @@ Provide a short description explaining the what, why, and how of your project. U
 - What problem does it solve?
 - What did you learn?
 
-## Table of Contents 
+## Table of Contents
 
 If your README is long, add a table of contents to make it easy for users to find what they need.
 
@@ -18,7 +18,6 @@ If your README is long, add a table of contents to make it easy for users to fin
 - [Credits](#credits)
 - [License](#license)
 - [Tests](#tests)
-
 
 ## Installation
 
@@ -42,7 +41,7 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 9 Type ‘python’ and press enter.
 
-Note! The version of the python which you have installed will be displayed if the python is successfully installed on your windows. 
+Note! The version of the python which you have installed will be displayed if the python is successfully installed on your windows.
 .
 
 ## Usage
@@ -57,11 +56,11 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+An Insightful Techie : [Unit Testing in Python using unittest framework - Basic Introduction and How to Write Tests](https://www.youtube.com/watch?v=HKTyOUx9Wf4&t=363s).
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+Caleb Curry : [Python Programming 53 - Sys.path and Changing Module Paths](https://www.youtube.com/watch?v=5z5nALNandM).
 
-If you followed tutorials, include links to those here as well.
+FreeCodeCamp : [Learn Python - Full Course for Beginners [Tutorial]](https://www.youtube.com/watch?v=rfscVS0vtbw).
 
 ## License
 
@@ -71,9 +70,18 @@ The last section of a high-quality README file is the license. This lets other d
 
 🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
 
-
-
 ## Tests
 
-1 link to 100 projects
-https://github.com/natnew/100-Python-Projects
+1 Open command line or terminal.
+
+2 Navigate to project folder AgeValidationTool
+
+3 Type cd tests then press enter.
+
+4 Type python test or py test then press enter.
+
+5
+
+
+![alt text](assets/images/output.png)
+
