@@ -38,7 +38,6 @@ Note! The version of the python which you have installed will be displayed if th
 
 ![alt text](assets/images/output3.png)
 
-
 ## Usage
 
 1 Open command line or terminal.
@@ -74,4 +73,3 @@ FreeCodeCamp : [Learn Python - Full Course for Beginners [Tutorial]](https://www
 5 The terminal produces output as shown below.
 
 ![alt text](assets/images/output.png)
-
