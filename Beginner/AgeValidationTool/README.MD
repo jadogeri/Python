@@ -2,21 +2,14 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+My motivation for this project is to solve problems in python. I built this project to utilize the basic concepts of python. This project validated user age (only numbers as input) checking if user was allowed to carry out different activities. This project taught me to write simple unit tests, read user inputs and import multiple modules.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
 
 ## Table of Contents
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
-- [License](#license)
 - [Tests](#tests)
 
 ## Installation
@@ -41,18 +34,24 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 9 Type ‘python’ and press enter.
 
-Note! The version of the python which you have installed will be displayed if the python is successfully installed on your windows.
-.
+Note! The version of the python which you have installed will be displayed if the python is successfully installed on your windows.The output produced as shown below.
+
+![alt text](assets/images/output3.png)
+
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+1 Open command line or terminal.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+2 Navigate to project folder AgeValidationTool.
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+3 Type cd src then press enter to navigate to the src directory.
+
+4 Type python main.py or py main.py then press enter.
+
+5 The terminal produces output as shown below.
+
+![alt text](assets/images/output2.png).
 
 ## Credits
 
@@ -62,26 +61,17 @@ Caleb Curry : [Python Programming 53 - Sys.path and Changing Module Paths](https
 
 FreeCodeCamp : [Learn Python - Full Course for Beginners [Tutorial]](https://www.youtube.com/watch?v=rfscVS0vtbw).
 
-## License
-
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
 ## Tests
 
 1 Open command line or terminal.
 
-2 Navigate to project folder AgeValidationTool
+2 Navigate to project folder AgeValidationTool.
 
-3 Type cd tests then press enter.
+3 Type cd tests then press enter to navigate to the tests directory.
 
-4 Type python test or py test then press enter.
+4 Type python test.py or py test.py then press enter.
 
-5
-
+5 The terminal produces output as shown below.
 
 ![alt text](assets/images/output.png)
 
