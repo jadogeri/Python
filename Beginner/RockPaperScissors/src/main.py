@@ -1,6 +1,7 @@
 
 import sys
 import time
+import random
 
 
 from utils.utils import *
@@ -18,48 +19,23 @@ from os.path import dirname, abspath
 
 choices = []
 file = open('constants.txt')
-choices = file.readlines();
+cpu_choices = file.readlines();
 file.close()
-print(choices)
-rock, paper ,scissors = choices
+rock, paper ,scissors = cpu_choices
 
-drinking_age = 21;
-club_age = 18;
-run = True;
-
-rounds = 0
-
-
-while (rounds == 0 ) :
-    rounds = get_round_count();
-    time.sleep(10)
+rounds = get_round_count();
     
-
-
-# if __name__ == "__main__":
-#     print("the main prog")
-# else:
-#     print("not the main prog")
-
-def validateAge(age):
-    response = "";
-    if (age < club_age):
-       
-        return response;
-    elif(age >= club_age and age < drinking_age):
-
-        return response;
-    else:
-    
-        return response;
-
 while (rounds > 0 and __name__ == "__main__") :
     try:
-        age = int(input("how old are you\n"))
-        validateAge(age);
+        player_choice = str(input("TYPE [ROCK], [PAPER] OR [SCISSORS]\n"))
+        cpu_choice = random.choice(cpu_choices)
+        print("cpu chose "+ cpu_choice)
+        outcome = get_round_outcome(player_choice,cpu_choice)
+        time.sleep(3)
+        print(outcome)
+        rounds -= 1
     except ValueError as err :
         print(err)
-    option = str(input('Do you want to try again!! Y or y for yes and N or n a no\n'))
-    if option.upper() != "Y":
-        run = False;
  
+
+
