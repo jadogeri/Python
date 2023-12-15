@@ -63,12 +63,12 @@ class ValidateAgeTest(unittest.TestCase):
         #Assert
         self.assertEqual(True,result)
     
-    def test_not_even_binary_number(self):
+    def test_even_binary_number(self):
         #Act
         print(self.num3)
         result = is_odd(self.num3)
         #Assert
-        self.assertEqual(True,result)
+        self.assertEqual(False,result)
 
 
 if __name__ == "__main__":
