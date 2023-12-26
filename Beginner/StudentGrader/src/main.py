@@ -17,7 +17,7 @@ while (run and __name__ == "__main__") :
         counter = 3
         while(counter > 0):
             user_score = int(input());
-            if is_valid_score(user_score):
+            if is_valid_score(user_score) == True:
                 match counter:
                     case 3:
                         test = get_test_percentage_score(user_score)                        
@@ -30,11 +30,15 @@ while (run and __name__ == "__main__") :
                         counter = counter - 1                  
                     case default :
                         break
-        total = test + lab + homework          
+        total = test + lab + homework   
+        print(total)       
            
     except ValueError as err :
         print(err)
     option = str(input('Do you want to try again!! Y or y for yes and N or n a no\n'))
+    if(option.upper() == 'N') :
+        run = False
+
    
        
  
