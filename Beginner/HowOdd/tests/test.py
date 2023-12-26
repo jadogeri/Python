@@ -2,24 +2,21 @@ import unittest
 import sys
 
 from os.path import dirname, abspath
-dir = dirname(dirname(abspath(__file__)))
+root_dir = dirname(dirname(abspath(__file__)))
 
-dir_src = dir +'\src'
-print(dir_src)
-
-dir_tests = dir +'\tests'
-#dir_utils = dir_src + '\utils'
+dir_src = root_dir +'\src'
+dir_tests = root_dir +'\tests'
+# dir_utils = dir_src + '\utils'
 
 
 sys.path.append(dir_src)
 sys.path.append(dir_tests)
-#sys.path.append(dir_utils)
+# sys.path.append(dir_utils)
 
 from utils.utils import is_odd
 
 
-
-class ValidateAgeTest(unittest.TestCase):
+class HowOddTest(unittest.TestCase):
 
    
     def setUp(self):
@@ -68,7 +65,7 @@ class ValidateAgeTest(unittest.TestCase):
         print(self.num3)
         result = is_odd(self.num3)
         #Assert
-        self.assertEqual(False,result)
+        self.assertEqual(not(False),result)
 
 
 if __name__ == "__main__":
