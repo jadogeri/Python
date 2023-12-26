@@ -2,59 +2,73 @@ import unittest
 import sys
 
 from os.path import dirname, abspath
-dir = dirname(dirname(abspath(__file__)))
+root_dir = dirname(dirname(abspath(__file__)))
 
-dir_src = dir +'\src'
-print(dir_src)
-
-dir_tests = dir +'\tests'
-
-
+dir_src = root_dir +'\\src'
+dir_tests = root_dir +'\tests'
 sys.path.append(dir_src)
 sys.path.append(dir_tests)
 
-from main import validateAge
-from constants import *
+from utils.utils import *
 
-
-class ValidateAgeTest(unittest.TestCase):
-
+class StudentGraderTest(unittest.TestCase):
    
     def setUp(self):
  
         print("SETUP called ...");
         # Arrange 
-        self.num1 = 17
-        self.num2 = 19
-        self.num3 = 24
-     
+
+        self.invalid_score1 = 101
+        self.invalid_score2 = -5
+        self.homework1 = 50       
+        self.test1 = 80
+        self.lab1 = 90
+                    
     def tearDown(self) :
         print("TEARDOWN called ...");
 
-        self.num1 = 0;
-        self.num2 = 0;
-        self.num3 = 0;
-       
-    def test_minor_age(self):
+        self.invalid_score1 = 0
+        self.invalid_score2 = 0
+        self.homework1 = 0            
+        self.test1 = 0   
+        self.lab1 = 0     
+        
+    def test_invalid_score_greater_than_out_of_bounds(self):
         #Act
-        result = validateAge(self.num1)
-        #Assert
-        self.assertEqual(MINOR_AGE_PROMPT,result)
-
-    def test_club_age(self):
+        result = is_valid_score(self.invalid_score1)
+        #Assert_
+        self.assertFalse(result)
+    
+    def test_invalid_score_less_than_out_of_bounds(self):
         #Act
-        result = validateAge(self.num2)
-        #Assert
-        self.assertEqual(CLUB_AGE_PROMPT,result)
-
-
-    def test_drinking_age(self):
+        result = is_valid_score(self.invalid_score2)
+        #Assert_
+        self.assertFalse(result)
+    
+    def test_valid_score(self):
         #Act
-        print(self.num3)
-        result = validateAge(self.num3)
+        result = is_valid_score(self.homework1)
+        #Assert_
+        self.assertEqual(result,True)
+          
+    def test_get_lab_percentage(self):
+        #Act
+        result = get_lab_percentage_score(self.lab1)
         #Assert
-        self.assertEqual(ADULT_AGE_PROMPT,result)
+        self.assertEqual(result,9)
+
+    def test_get_test_percentage(self):
+        #Act
+        result = get_test_percentage_score(self.test1)
+        #Assert
+        self.assertEqual(result,32)
+    def test_get_homework_percentage(self):
+        #Act
+        result = get_homework_percentage_score(self.homework1)
+        #Assert
+        self.assertEqual(25,result)     
 
 
 if __name__ == "__main__":
     unittest.main()
+

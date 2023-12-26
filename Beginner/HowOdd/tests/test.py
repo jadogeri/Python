@@ -6,12 +6,9 @@ root_dir = dirname(dirname(abspath(__file__)))
 
 dir_src = root_dir +'\src'
 dir_tests = root_dir +'\tests'
-# dir_utils = dir_src + '\utils'
-
-
 sys.path.append(dir_src)
 sys.path.append(dir_tests)
-# sys.path.append(dir_utils)
+
 
 from utils.utils import is_odd
 

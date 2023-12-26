@@ -1,8 +1,8 @@
-# AGE VALIDATION TOOL
+# STUDENT GRADER
 
 ## Description
 
-My motivation for this project is to solve problems in python. I built this project to utilize the basic concepts of python. This project validated user age (only numbers as input) checking if user was allowed to carry out different activities. This project taught me to write simple unit tests, read user inputs and import multiple modules.
+My motivation for this project is to solve problems in python. I built this project to utilize the basic concepts of python. This project validates userscores (only numbers as input) checking if user was allowed to carry out different activities. This project taught me to write simple unit tests, read user inputs and import multiple modules.
 
 
 ## Table of Contents
@@ -46,7 +46,7 @@ Note! The version of the python which you have installed will be displayed if th
 
 3 Enter command cd Python then press enter.
 
-4 Navigate to project src folder entering command cd Beginner/AgeValidationTool/src.
+4 Navigate to project src folder entering command cd Beginner/StudentGrader/src.
 
 5 Type python main.py or py main.py then press enter.
 
