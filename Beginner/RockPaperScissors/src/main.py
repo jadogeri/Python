@@ -6,16 +6,7 @@ import random
 
 from utils.utils import *
 from os.path import dirname, abspath
-# dir_src = dirname((abspath(__file__)))
 
-# print('line 7',dir_src)
-
-# #dir_utils = dir_src + '\utils'
-
-# sys.path.append(dir_src)
-# #sys.path.append(dir_utils)
-
-#print('ager is === '+ str(ager))
 
 choices = []
 file = open('constants.txt')

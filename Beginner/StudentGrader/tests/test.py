@@ -5,7 +5,7 @@ from os.path import dirname, abspath
 root_dir = dirname(dirname(abspath(__file__)))
 
 dir_src = root_dir +'\\src'
-dir_tests = root_dir +'\tests'
+dir_tests = root_dir +'\\tests'
 sys.path.append(dir_src)
 sys.path.append(dir_tests)
 
