@@ -4,7 +4,7 @@ import sys
 from os.path import dirname, abspath
 root_dir = dirname(dirname(abspath(__file__)))
 
-dir_src = root_dir +'\src'
+dir_src = root_dir +'\\src'
 dir_tests = root_dir +'\tests'
 sys.path.append(dir_src)
 sys.path.append(dir_tests)
@@ -52,14 +52,14 @@ class HowOddTest(unittest.TestCase):
 
     def test_odd_binary_number(self):
         #Act
-        print(self.num3)
+        
         result = is_odd(self.num3)
         #Assert
         self.assertEqual(True,result)
     
     def test_even_binary_number(self):
         #Act
-        print(self.num3)
+        
         result = is_odd(self.num3)
         #Assert
         self.assertEqual(not(False),result)
