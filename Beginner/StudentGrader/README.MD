@@ -4,13 +4,22 @@
 
 My motivation for this project is to solve problems in python. I built this project to utilize the basic concepts of python. This project validates userscores (only numbers as input) checking if user was allowed to carry out different activities. This project taught me to write simple unit tests, read user inputs and import multiple modules.
 
+## Authors
+
+- [@jadogeri](https://www.github.com/jadogeri)
+
+## Lab
+
+- ![Lab](assets/images/lab.png) 
 
 ## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
 - [Tests](#tests)
+- [About me](#about-me)
+- [License](#license)
+- [Credits](#credits)
 
 ## Installation
 
@@ -54,6 +63,37 @@ Note! The version of the python which you have installed will be displayed if th
 
 ![alt text](assets/images/output2.png).
 
+## Tests
+
+1 Open command line or terminal.
+
+2 Navigate to project folder AreaOfASquare.
+
+3 Type cd tests then press enter to navigate to the tests directory.
+
+```bash
+  cd tests
+```
+
+4 Type python test.py or py test.py then press enter.
+
+```bash
+  py test.py
+```
+
+5 The terminal produces output as shown below.
+
+![alt text](assets/images/output.png)
+
+## About Me  
+🚀
+I'm a Database Programmer learning Python to build mobile, web and cloud applications.
+
+
+## License
+
+[LICENSE](/LICENSE)
+
 ## Credits
 
 An Insightful Techie : [Unit Testing in Python using unittest framework - Basic Introduction and How to Write Tests](https://www.youtube.com/watch?v=HKTyOUx9Wf4&t=363s).
@@ -62,16 +102,3 @@ Caleb Curry : [Python Programming 53 - Sys.path and Changing Module Paths](https
 
 FreeCodeCamp : [Learn Python - Full Course for Beginners [Tutorial]](https://www.youtube.com/watch?v=rfscVS0vtbw).
 
-## Tests
-
-1 Open command line or terminal.
-
-2 Navigate to project folder AgeValidationTool.
-
-3 Type cd tests then press enter to navigate to the tests directory.
-
-4 Type python test.py or py test.py then press enter.
-
-5 The terminal produces output as shown below.
-
-![alt text](assets/images/output.png)
