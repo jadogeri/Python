@@ -1,8 +1,7 @@
-# STUDENT GRADER
+# Area Of A Square using Python
 
 ## Description
-
-My motivation for this project is to solve problems in python. I built this project to utilize the basic concepts of python. This project validates userscores (only numbers as input) checking if user was allowed to carry out different activities. This project taught me to write simple unit tests, read user inputs and import multiple modules.
+This app takes in float or int as radius, calculate the area of a square
 
 ## Authors
 
@@ -10,20 +9,27 @@ My motivation for this project is to solve problems in python. I built this proj
 
 ## Lab
 
-- ![Lab](assets/images/lab.png) 
+- ![Lab](assets/images/1%20AreaOfASquare.png)  
 
 ## Table of Contents
 
+- [Screenshots](#screenshots)
 - [Installation](#installation)
 - [Usage](#usage)
+    -[Run Locally](#run-locally)
 - [Tests](#tests)
 - [About me](#about-me)
 - [License](#license)
 - [Credits](#credits)
 
+## Screenshots
+
+|![Screenshot 1](assets/images/Screenshot1.png)    |  ![Screenshot 2](assets/images/Screenshot2.png) |                 
+| ![Screenshot 3](assets/images/Screenshot3.png) | 
+
 ## Installation
 
-### For Windows
+[### For Windows](https://www.python.org/downloads/)
 
 1 Type in address bar [https://www.python.org](https://www.python.org/).
 
@@ -39,30 +45,49 @@ My motivation for this project is to solve problems in python. I built this proj
 
 7 The installation process will take few minutes to complete and once the installation is successful, the following screen is displayed.
 
-8 Open the command prompt by typing into windows searbar cmd.
+8 Open the command prompt by typing into windows searchbar cmd.
 
-9 Type ‘python’ and press enter.
+9 Type Py --version and press enter.
+
+```bash
+  py --version
+```
+
 
 Note! The version of the python which you have installed will be displayed if the python is successfully installed on your windows.The output produced as shown below.
 
-![alt text](assets/images/output3.png)
+![alt text](assets/images/installed.png)
 
 ## Usage
 
+### Run Locally
+
+#### Get Project 
 1 Open command line or terminal.
 
 2 Type command git clone https://github.com/jadogeri/Python.git then press enter.
 
+```bash
+  git clone https://github.com/jadogeri/Python.git
+```
+
 3 Enter command cd Python then press enter.
 
-4 Navigate to project src folder entering command cd Beginner/StudentGrader/src.
+```bash
+  cd Python
+```
 
-5 Type python main.py or py main.py then press enter.
+4 Navigate to project src folder entering command cd Beginner/AreaOfASquare/src.
 
-6 The terminal produces output as shown below.
+```bash
+  cd /Beginner/AreaOfASquare/src
+```
 
-![alt text](assets/images/output2.png).
+5 Type py main.py to run program.
 
+```bash
+  py main.py
+```
 ## Tests
 
 1 Open command line or terminal.
@@ -83,7 +108,7 @@ Note! The version of the python which you have installed will be displayed if th
 
 5 The terminal produces output as shown below.
 
-![alt text](assets/images/output.png)
+![alt text](assets/images/tests.png)
 
 ## About Me  
 🚀
