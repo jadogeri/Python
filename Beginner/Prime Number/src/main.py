@@ -15,23 +15,43 @@ while (input_count == 0):
 
 def isPrimeNumber(user_choice : int):
     
-    outcome = False;
-    exponent = 0;
-    base = 2;
+    outcome : bool = False;
+    exponent : int = 0;
+    base : int = 2;
 
     if (user_choice == 1 or user_choice == 0):
         outcome = False;
+        return outcome; 
+    elif (user_choice == 2 or user_choice == 3):
+        outcome = True;
+        return outcome;
+    elif (user_choice % 2 == 0 or user_choice % 3 == 0):
+        outcome = False;
         return outcome;    
-    
     else:    
-        while (base ** exponent < user_choice ): 
-            if ((base ** exponent) + 1 == user_choice ):                
+        n : int = 1;
+        run : bool = True;
+        upper_bound : int = (6 * n) + 1;
+        lower_bound : int = (6 * n) - 1;
+   
+        while (run and (n <= user_choice or n >= user_choice)): 
+            print("in loop")
+            print("upper_bound == ", upper_bound);
+           
+
+            if (user_choice == upper_bound or user_choice == lower_bound ):                
                 outcome = True;
                 return outcome;
-
+            if ( upper_bound > user_choice):
+                run = False;
             else:
-                exponent += 1;
+                n = n + 1;
         return outcome;
+
+def  recur(n : int, user_choice : int):
+    if (((6 * n) - 1 == user_choice) or ((6 * n) + 1 == user_choice)):
+        return True
+ 
 
 
 while (input_count > 0 and __name__ == "__main__") :
