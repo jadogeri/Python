@@ -2,7 +2,7 @@
 
 ## Description
 
-My motivation for this project is to solve problems in python. I built this project to utilize the basic concepts of python. This project validated user age (only numbers as input) checking if user was allowed to carry out different activities. This project taught me to write simple unit tests, read user inputs and import multiple modules.
+My motivation for this project is to solve problems in python. I built this project to utilize the basic concepts of python. This project validated user input, checking if the value was odd or even. This project taught me to write simple unit tests, read user inputs and import multiple modules.
 
 
 ## Authors

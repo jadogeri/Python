@@ -7,7 +7,7 @@ dir = dirname(dirname(abspath(__file__)))
 dir_src = dir +'\src'
 print(dir_src)
 
-dir_tests = dir +'\tests'
+dir_tests = dir +'\test'
 
 
 sys.path.append(dir_src)
