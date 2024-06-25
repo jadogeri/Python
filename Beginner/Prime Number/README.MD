@@ -12,7 +12,7 @@ My motivation for this project is to solve problems in python. I built this proj
 
 ## Lab
 
-- ![Lab](assets/images/handout.pdf)  
+- ![Lab](assets/images/lab.png)  
 
 ## Table of Contents
 
