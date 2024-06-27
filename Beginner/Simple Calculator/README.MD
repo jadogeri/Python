@@ -19,6 +19,7 @@ My motivation for this project is to solve problems in python. I built this proj
 - [Installation](#installation)
 - [Usage](#usage)
     -[Run Locally](#run-locally)
+    -[demo](#demo)
 - [Tests](#tests)
 - [About me](#about-me)
 - [License](#license)
@@ -85,6 +86,9 @@ Note! The version of the python which you have installed will be displayed if th
 ```bash
   py main.py
 ```
+## Demo
+![alt text](assets/images/demo.JPG)
+
 ## Tests
 
 1 Open command line or terminal.
@@ -105,7 +109,7 @@ Note! The version of the python which you have installed will be displayed if th
 
 5 The terminal produces output as shown below.
 
-![alt text](assets/images/tests.png)
+![alt text](assets/images/tests.JPG)
 
 ## About Me  
 🚀

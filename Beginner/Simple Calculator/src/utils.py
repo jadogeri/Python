@@ -2,7 +2,6 @@ def is_valid_symbol(operation : str):
     is_valid : bool = False;
     operation_list : list = ["+","-","*","x","X","/","%"];
     for symbol in operation_list:
-        print(symbol)
         if (symbol == operation):
             is_valid = True;
             return is_valid;   
