@@ -80,11 +80,35 @@ class SimpleCalculatorTest(unittest.TestCase):
         #Assert
         self.assertTrue(result)
     
-    def test_is_valid_symbol(self):
+    def test_is_not_valid_symbol(self):
         #Act
         result = is_valid_symbol(self.num1)
         #Assert
         self.assertFalse(result)
+    
+    def test_add_operation(self):
+        #Act
+        result = compute_values(self.num1,self.plus,self.num2);
+        #Assert
+        self.assertEqual(result, 150);
+    
+    def test_minus_operation(self):
+        #Act
+        result = compute_values(self.num2,self.minus,self.num1);
+        #Assert
+        self.assertEqual(result, 50);
+
+    def test_divide_operation(self):
+        #Act
+        result = compute_values(self.num2,self.divide,self.num1);
+        #Assert
+        self.assertEqual(result, 2);
+
+    def test_multiply_operation(self):
+        #Act
+        result = compute_values(self.num2,self.star,self.num1);
+        #Assert
+        self.assertEqual(result, 5000);
 
 
 
