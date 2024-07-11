@@ -11,4 +11,7 @@ def factorial(num : int):
         return num * factorial( num - 1 ); 
              
     
-      
+def is_valid_input(num : int):
+    if ( num < 0 ):
+        return False;
+    return True;

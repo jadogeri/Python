@@ -18,10 +18,9 @@ while (input_count > 0 and __name__ == "__main__") :
     try:
         input_string = str(input("Enter numner?\n"));
         input_int = int(input_string);
-
-        print(str(input_int) + "! = " + str(factorial(input_int)));
-
-        input_count -= 1;
+        if (is_valid_input(input_int)):
+            print(str(input_int) + "! = " + str(factorial(input_int)));
+            input_count -= 1;
     except ValueError as err :
         print(err);
    

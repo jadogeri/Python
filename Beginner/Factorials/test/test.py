@@ -14,7 +14,7 @@ dir_tests = dir +'\tests';
 sys.path.append(dir_src)
 sys.path.append(dir_tests)
 
-from utils.utils import factorial
+from utils.utils import *;
 
 class FactorialTest(unittest.TestCase):
 
@@ -27,6 +27,8 @@ class FactorialTest(unittest.TestCase):
         self.num1 : int = 0
         self.num2 : int = 1;
         self.num3 : int = 3;
+        self.num4 : int = -1;
+
 
      
     def tearDown(self) :
@@ -35,6 +37,7 @@ class FactorialTest(unittest.TestCase):
         self.num1 = 0;
         self.num2 = 0;
         self.num3 = 0;
+        self.num4 = 0;
 
        
     def test_base_case_0(self):
@@ -54,6 +57,12 @@ class FactorialTest(unittest.TestCase):
         result = factorial(self.num3)
         #Assert
         self.assertEqual(result, 6)
+        
+    def test_is_valid_input(self):
+        #Act
+        result = is_valid_input(self.num4)
+        #Assert
+        self.assertFalse(result);    
 
 
 
