@@ -1,10 +1,8 @@
-# FIBONACCI
+# GEOMETRY
 
 ## Description
 
-My motivation for this project is to solve problems in python. I built this project to utilize the basic concepts of python. This project validates user inputs, finds the fibonacci value of any given number. This project taught me to write simple unit tests, implement recursion, read user inputs and import multiple modules.
-
-
+My motivation for this project is to solve problems in python. I built this project to utilize the basic concepts of python. This project validates user inputs, finds the  perimeters and areas . This project taught me to write simple unit tests, read user inputs and import multiple modules.
 
 ## Authors
 
@@ -12,14 +10,14 @@ My motivation for this project is to solve problems in python. I built this proj
 
 ## Lab
 
-- ![Lab](assets/images/lab.png)  
+- ![Lab](assets/images/lab.png)
 
 ## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
-    -[Run Locally](#run-locally)
-    -[Screenshot](#screenshot)
+  -[Run Locally](#run-locally)
+  -[Screenshot](#screenshot)
 - [Tests](#tests)
 - [About me](#about-me)
 - [License](#license)
@@ -51,7 +49,6 @@ My motivation for this project is to solve problems in python. I built this proj
   py --version
 ```
 
-
 Note! The version of the python which you have installed will be displayed if the python is successfully installed on your windows.The output produced as shown below.
 
 ![alt text](assets/images/installed.png)
@@ -60,7 +57,8 @@ Note! The version of the python which you have installed will be displayed if th
 
 ### Run Locally
 
-#### Get Project 
+#### Get Project
+
 1 Open command line or terminal.
 
 2 Type command git clone https://github.com/jadogeri/Python.git then press enter.
@@ -75,10 +73,10 @@ Note! The version of the python which you have installed will be displayed if th
   cd Python
 ```
 
-4 Navigate to project src folder entering command cd Beginner/Fibonacci/src.
+4 Navigate to project src folder entering command cd Intermediate/Geometry/src.
 
 ```bash
-  cd /Beginner/Fibonacci/src
+  cd /Beginner/Geometry/src
 ```
 
 5 Type py main.py to run program.
@@ -88,8 +86,8 @@ Note! The version of the python which you have installed will be displayed if th
 ```
 
 ## Screenshot
-- ![Screenshot](assets/images/screenshot.png)  
 
+- ![Screenshot](assets/images/screenshot.png)
 
 ## Tests
 
@@ -113,10 +111,10 @@ Note! The version of the python which you have installed will be displayed if th
 
 ![alt text](assets/images/tests.png)
 
-## About Me  
+## About Me
+
 🚀
 I'm a Database Programmer learning Python for Data Engineering.
-
 
 ## License
 
@@ -129,6 +127,3 @@ An Insightful Techie : [Unit Testing in Python using unittest framework - Basic 
 Caleb Curry : [Python Programming 53 - Sys.path and Changing Module Paths](https://www.youtube.com/watch?v=5z5nALNandM).
 
 FreeCodeCamp : [Learn Python - Full Course for Beginners [Tutorial]](https://www.youtube.com/watch?v=rfscVS0vtbw).
-
-
-
